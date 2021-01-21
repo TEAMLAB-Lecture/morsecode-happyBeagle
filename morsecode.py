@@ -265,10 +265,7 @@ def decoding_sentence(morse_sentence):
     space_count = 0
     for morse_character in morse_list:
         if morse_character == '':
-            space_count += 1
-            if space_count == 2:
-                result += " "
-                space_count = 0
+            result += " "
         else:
             result += decoding_character(morse_character)    
     
